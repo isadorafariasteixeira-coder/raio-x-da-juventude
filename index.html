@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raio-X da Juventude</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #0b2948;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 22px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #0000000d;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #eaf2ff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .numero {
+      font-size: 32px;
+      font-weight: bold;
+      color: #123c69;
+    }
+
+    .barra {
+      display: flex;
+      height: 30px;
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    .sim {
+      width: 70%;
+      background: #25855a;
+    }
+
+    .nao {
+      width: 30%;
+      background: #e49b35;
+    }
+
+    .solucao {
+      border-left: 5px solid #25855a;
+      padding-left: 15px;
+      margin: 20px 0;
+    }
+
+    .aviso {
+      background: #fff4d6;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #123c69;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Raio-X da Juventude</h1>
+    <p>Condições de vida, educação e oportunidades para os jovens</p>
+  </header>
+
+  <nav>
+    <a href="#projeto">O projeto</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#solucoes">Soluções</a>
+  </nav>
+
+  <main>
+    <section id="projeto">
+      <h2>Sobre o projeto</h2>
+      <p>
+        O Raio-X da Juventude busca compreender as condições
+        socioeconômicas, educacionais e de qualidade de vida dos jovens.
+        A proposta é transformar dados em informações que ajudem a
+        identificar dificuldades e propor melhorias para a sociedade.
+      </p>
+      <p>
+        A análise utiliza Python, pandas e ferramentas de visualização
+        de dados para organizar informações e produzir indicadores.
+      </p>
+    </section>
+
+    <section id="resultados">
+      <h2>Indicadores da análise inicial</h2>
+      <p>Exemplo de análise com 10 registros fictícios.</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="numero">10</div>
+          <div>Jovens analisados</div>
+        </div>
+
+        <div class="card">
+          <div class="numero">70%</div>
+          <div>Com acesso à internet</div>
+        </div>
+
+        <div class="card">
+          <div class="numero">30%</div>
+          <div>Sem acesso à internet</div>
+        </div>
+
+        <div class="card">
+          <div class="numero">2,5 h</div>
+          <div>Média diária de estudo</div>
+        </div>
+      </div>
+
+      <h3>Acesso à internet</h3>
+      <div class="barra">
+        <div class="sim"></div>
+        <div class="nao"></div>
+      </div>
+
+      <p>Verde: 7 jovens com acesso (70%).</p>
+      <p>Laranja: 3 jovens sem acesso (30%).</p>
+
+      <p class="aviso">
+        Atenção: os números apresentados são fictícios e servem apenas
+        para demonstrar o funcionamento do projeto. Não representam
+        uma pesquisa real sobre a juventude.
+      </p>
+    </section>
+
+    <section id="solucoes">
+      <h2>Propostas de intervenção</h2>
+
+      <div class="solucao">
+        <h3>1. Inclusão digital</h3>
+        <p>
+          Ampliar o acesso gratuito à internet, a computadores e a
+          espaços comunitários de estudo.
+        </p>
+      </div>
+
+      <div class="solucao">
+        <h3>2. Apoio socioemocional</h3>
+        <p>
+          Incentivar programas de mentoria, orientação escolar e
+          acompanhamento psicossocial.
+        </p>
+      </div>
+
+      <div class="solucao">
+        <h3>3. Preparação para o futuro</h3>
+        <p>
+          Oferecer formação em programação, análise de dados e
+          competências digitais para o mercado de trabalho.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Próximas etapas</h2>
+      <ul>
+        <li>Ampliar a coleta de dados.</li>
+        <li>Utilizar bases públicas e fontes confiáveis.</li>
+        <li>Investigar diferenças socioeconômicas e educacionais.</li>
+        <li>Atualizar os gráficos com resultados reais.</li>
+        <li>Avaliar propostas de melhoria para os jovens.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Raio-X da Juventude</p>
+    <p>Dados, educação e transformação social.</p>
+  </footer>
+
+</body>
+</html>
